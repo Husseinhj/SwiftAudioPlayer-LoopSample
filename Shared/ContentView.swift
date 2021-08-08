@@ -20,8 +20,8 @@ struct ContentView: View {
                         return }
                     let url = URL(fileURLWithPath: path)
                     
-                    SAPlayer.shared.setStartTime(at: 0.0)
-                    SAPlayer.shared.setEndTime(at: 5.0)
+                    SAPlayer.shared.setStartTime(at: 2.0)
+                    SAPlayer.shared.setEndTime(at: 6.0)
                     SAPlayer.shared.play(url: url)
                 }, label: {
                     Text("Play loop")
@@ -61,7 +61,6 @@ extension SAPlayer {
     
     func setStartTime(at: Double) {
         startTime = at
-        SAPlayer.shared.seekTo(seconds: at)
     }
     
     func setEndTime(at: Double) {
@@ -79,6 +78,7 @@ extension SAPlayer {
         })
         
         SAPlayer.shared.startSavedAudio(withSavedUrl: url)
+        SAPlayer.shared.seekTo(seconds: startTime)
         SAPlayer.shared.play()
     }
 }
