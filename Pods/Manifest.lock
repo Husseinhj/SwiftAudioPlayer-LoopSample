@@ -1,0 +1,16 @@
+PODS:
+  - SwiftAudioPlayer (5.2.0)
+
+DEPENDENCIES:
+  - SwiftAudioPlayer
+
+SPEC REPOS:
+  trunk:
+    - SwiftAudioPlayer
+
+SPEC CHECKSUMS:
+  SwiftAudioPlayer: 0a48324670896f952f34d5cb26527d6a418da898
+
+PODFILE CHECKSUM: 93898f861aec0dca587eb44770bb54b0287e4570
+
+COCOAPODS: 1.10.2

@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D8441349A6180DE11FA669B /* Pods_loopPlayer__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAAD8EC7212F77CADE09259 /* Pods_loopPlayer__macOS_.framework */; };
+		5BAD4087959857C0E6676E7A /* Pods_loopPlayer__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7696C7B477B9010BA7977721 /* Pods_loopPlayer__iOS_.framework */; };
 		E632032826BFBA690020850A /* loopPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E632031526BFBA660020850A /* loopPlayerApp.swift */; };
 		E632032926BFBA690020850A /* loopPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E632031526BFBA660020850A /* loopPlayerApp.swift */; };
 		E632032A26BFBA690020850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E632031626BFBA660020850A /* ContentView.swift */; };
 		E632032B26BFBA690020850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E632031626BFBA660020850A /* ContentView.swift */; };
 		E632032C26BFBA690020850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E632031726BFBA690020850A /* Assets.xcassets */; };
 		E632032D26BFBA690020850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E632031726BFBA690020850A /* Assets.xcassets */; };
+		E6CF569E26BFBDB100AFA4CD /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CF569D26BFBDB100AFA4CD /* sample.mp3 */; };
+		E6CF569F26BFBDB100AFA4CD /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E6CF569D26BFBDB100AFA4CD /* sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7696C7B477B9010BA7977721 /* Pods_loopPlayer__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loopPlayer__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8863183B92F61BCF7D12978A /* Pods-loopPlayer (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loopPlayer (macOS).release.xcconfig"; path = "Target Support Files/Pods-loopPlayer (macOS)/Pods-loopPlayer (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		8BAAD8EC7212F77CADE09259 /* Pods_loopPlayer__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loopPlayer__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C494DBAB53FC24BF5C422B /* Pods-loopPlayer (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loopPlayer (macOS).debug.xcconfig"; path = "Target Support Files/Pods-loopPlayer (macOS)/Pods-loopPlayer (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		E632031526BFBA660020850A /* loopPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loopPlayerApp.swift; sourceTree = "<group>"; };
 		E632031626BFBA660020850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E632031726BFBA690020850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +32,9 @@
 		E632032426BFBA690020850A /* loopPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loopPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E632032626BFBA690020850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E632032726BFBA690020850A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E6CF569D26BFBDB100AFA4CD /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+		F1C9F118AF6458B6B4E6B9C1 /* Pods-loopPlayer (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loopPlayer (iOS).debug.xcconfig"; path = "Target Support Files/Pods-loopPlayer (iOS)/Pods-loopPlayer (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		F48A58F101221E0D172E2211 /* Pods-loopPlayer (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loopPlayer (iOS).release.xcconfig"; path = "Target Support Files/Pods-loopPlayer (iOS)/Pods-loopPlayer (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAD4087959857C0E6676E7A /* Pods_loopPlayer__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,12 +50,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8441349A6180DE11FA669B /* Pods_loopPlayer__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B26E06CD9A8D823FE4760DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7696C7B477B9010BA7977721 /* Pods_loopPlayer__iOS_.framework */,
+				8BAAD8EC7212F77CADE09259 /* Pods_loopPlayer__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D04FF8BFECC65CBB8B69138A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C9F118AF6458B6B4E6B9C1 /* Pods-loopPlayer (iOS).debug.xcconfig */,
+				F48A58F101221E0D172E2211 /* Pods-loopPlayer (iOS).release.xcconfig */,
+				93C494DBAB53FC24BF5C422B /* Pods-loopPlayer (macOS).debug.xcconfig */,
+				8863183B92F61BCF7D12978A /* Pods-loopPlayer (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E632030F26BFBA660020850A = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +84,8 @@
 				E632031E26BFBA690020850A /* iOS */,
 				E632032526BFBA690020850A /* macOS */,
 				E632031D26BFBA690020850A /* Products */,
+				D04FF8BFECC65CBB8B69138A /* Pods */,
+				3B26E06CD9A8D823FE4760DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +111,7 @@
 		E632031E26BFBA690020850A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E6CF569D26BFBDB100AFA4CD /* sample.mp3 */,
 				E632031F26BFBA690020850A /* Info.plist */,
 			);
 			path = iOS;
@@ -97,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E632033026BFBA690020850A /* Build configuration list for PBXNativeTarget "loopPlayer (iOS)" */;
 			buildPhases = (
+				F5011B417B1200858C8EB38B /* [CP] Check Pods Manifest.lock */,
 				E632031826BFBA690020850A /* Sources */,
 				E632031926BFBA690020850A /* Frameworks */,
 				E632031A26BFBA690020850A /* Resources */,
+				24FB225D21F35BBA52AD71DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E632033326BFBA690020850A /* Build configuration list for PBXNativeTarget "loopPlayer (macOS)" */;
 			buildPhases = (
+				777764D8DD2C6D8CB4D03453 /* [CP] Check Pods Manifest.lock */,
 				E632032026BFBA690020850A /* Sources */,
 				E632032126BFBA690020850A /* Frameworks */,
 				E632032226BFBA690020850A /* Resources */,
@@ -168,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CF569E26BFBDB100AFA4CD /* sample.mp3 in Resources */,
 				E632032C26BFBA690020850A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,11 +216,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CF569F26BFBDB100AFA4CD /* sample.mp3 in Resources */,
 				E632032D26BFBA690020850A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24FB225D21F35BBA52AD71DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loopPlayer (iOS)/Pods-loopPlayer (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loopPlayer (iOS)/Pods-loopPlayer (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loopPlayer (iOS)/Pods-loopPlayer (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777764D8DD2C6D8CB4D03453 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-loopPlayer (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5011B417B1200858C8EB38B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-loopPlayer (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E632031826BFBA690020850A /* Sources */ = {
@@ -317,6 +422,7 @@
 		};
 		E632033126BFBA690020850A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C9F118AF6458B6B4E6B9C1 /* Pods-loopPlayer (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +445,7 @@
 		};
 		E632033226BFBA690020850A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48A58F101221E0D172E2211 /* Pods-loopPlayer (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +469,7 @@
 		};
 		E632033426BFBA690020850A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C494DBAB53FC24BF5C422B /* Pods-loopPlayer (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +494,7 @@
 		};
 		E632033526BFBA690020850A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8863183B92F61BCF7D12978A /* Pods-loopPlayer (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

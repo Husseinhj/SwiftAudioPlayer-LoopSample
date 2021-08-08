@@ -1,0 +1,6 @@
+framework module Pods_loopPlayer__iOS_ {
+  umbrella header "Pods-loopPlayer (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
