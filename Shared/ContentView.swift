@@ -73,7 +73,7 @@ extension SAPlayer {
             SAPlayer.Updates.ElapsedTime.unsubscribe(elpasedSub!)
         }
         elpasedSub = SAPlayer.Updates.ElapsedTime.subscribe({ url, time in
-            if time >= endTime {
+            if time >= endTime && endTime > -1 {
                 SAPlayer.shared.seekTo(seconds: startTime)
             }
         })
